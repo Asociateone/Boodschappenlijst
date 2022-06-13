@@ -14,6 +14,7 @@ return new class extends Migration
             $table->string('image');
             $table->decimal('price', 5, 2);
             $table->foreignId('store_id')->unsigned();
+            $table->timestamps();
         });
 
         Schema::table('products', function ($table) {
