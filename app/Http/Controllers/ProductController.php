@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductController extends Controller
 {

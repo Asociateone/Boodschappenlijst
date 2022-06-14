@@ -11,6 +11,8 @@ class ShoppinglistItem extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         'amount'
     ];

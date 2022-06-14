@@ -30,6 +30,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('user/{user}')->group(function () {
     Route::apiResource('shoppinglist', ShoppinglistController::class)->names('shoppinglist')->except(['update']);
 
-    Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class)
-        ->names('shoppingListItem');
+    Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class);
 });
