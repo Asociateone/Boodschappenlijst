@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShoppinglistController;
-use App\Http\Controllers\ShoppinglistItemController;
+use App\Http\Controllers\ShoppingListItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +30,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('user/{user}')->group(function () {
     Route::apiResource('shoppinglist', ShoppinglistController::class)->names('shoppinglist')->except(['update']);
 
-    Route::apiResource('shoppinglist/{shoppinglist}/item', ShoppinglistItemController::class)
+    Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class)
         ->names('shoppingListItem');
 });

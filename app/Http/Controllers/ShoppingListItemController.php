@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-class ShoppinglistItemController extends Controller
+use App\Models\ShoppinglistItem;
+use App\Http\Requests\ShoppingListItemRequest;
+use Illuminate\Http\Request;
+
+class ShoppingListItemController extends Controller
 {
-    public function update()
+    public function update(ShoppingListItemRequest $request)
     {
-        dd("fml");
+        return $request->validated();
     }
 
     public function destroy()

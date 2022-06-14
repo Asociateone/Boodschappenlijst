@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateShoppingListRequest extends FormRequest
+class ShoppingListItemRequest extends FormRequest
 {
     public function authorize(): bool
     {
@@ -14,7 +14,7 @@ class CreateShoppingListRequest extends FormRequest
     public function rules(): array|string
     {
         return [
-            'name' => 'max:255|required',
+            'amount' => 'max:255|integer|required',
         ];
     }
 }
