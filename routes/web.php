@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShoppinglistController;
 use App\Http\Controllers\ShoppingListItemController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,11 @@ Route::get('/', function () {
 
 Route::get('products', [ProductController::class, 'index'])->name('products');
 
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::prefix('user/{user}')->middleware([ 'userBelongsToPage'])->group(function () {
+Route::apiResource('user', UserController::class)->middleware(['auth:api', 'userBelongsToPage'])->names('user')->except(['index', 'create']);
+
+Route::prefix('user/{user}')->middleware(['auth:api', 'userBelongsToPage'])->group(function () {
     Route::apiResource('shoppinglist', ShoppinglistController::class)->names('shoppinglist')->except(['update']);
 
     Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class);
