@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateShoppingListRequest;
-use App\Models\Shoppinglist;
 use App\Models\User;
+use App\Models\Shoppinglist;
 use Illuminate\Database\Eloquent\Collection;
+use App\Http\Requests\CreateShoppingListRequest;
 
 class ShoppinglistController extends Controller
 {
@@ -14,9 +14,9 @@ class ShoppinglistController extends Controller
         return Shoppinglist::all();
     }
 
-    public function show(User $user, Shoppinglist $shoppinglist)
+    public function show(User $user, Shoppinglist $shoppinglist): Collection
     {
-        return $shoppinglist;
+        return $shoppinglist->shoppinglistItems()->get();
     }
 
     public function store(CreateShoppingListRequest $request, User $user): Shoppinglist

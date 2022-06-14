@@ -22,7 +22,7 @@ class Shoppinglist extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function shoppinglistItem(): HasMany
+    public function shoppinglistItems(): HasMany
     {
         return $this->hasMany(ShoppinglistItem::class);
     }
