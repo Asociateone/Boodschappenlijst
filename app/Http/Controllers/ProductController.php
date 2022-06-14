@@ -7,7 +7,7 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductController extends Controller
 {
-    public function index(): LengthAwarePaginator
+    public function index()
     {
         return Product::paginate(100);
     }

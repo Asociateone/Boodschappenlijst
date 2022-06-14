@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('shoppinglists', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->foreignId('user_id');
-            $table->string('shopping_list_name');
             $table->timestamps();
         });
 

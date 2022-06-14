@@ -10,13 +10,13 @@ return new class extends Migration
     {
         Schema::create('shoppinglist_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('shopping_list_id');
+            $table->foreignId('shoppinglists_id');
             $table->foreignId('product_id');
             $table->integer('amount');
         });
 
         Schema::table('shoppinglist_items', function ($table) {
-            $table->foreign('shopping_list_id')->references('id')->on('shoppinglists')->onDelete('cascade');
+            $table->foreign('shoppinglists_id')->references('id')->on('shoppinglists')->onDelete('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
