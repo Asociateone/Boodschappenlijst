@@ -14,7 +14,7 @@ class CreateShoppingListRequest extends FormRequest
     public function rules(): array|string
     {
         return [
-            'name' => 'max:255|required',
+            'name' => 'max:255|string|required',
         ];
     }
 }

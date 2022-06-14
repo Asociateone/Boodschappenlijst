@@ -27,7 +27,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::prefix('user/{user}')->group(function () {
+Route::prefix('user/{user}')->middleware([ 'userBelongsToPage'])->group(function () {
     Route::apiResource('shoppinglist', ShoppinglistController::class)->names('shoppinglist')->except(['update']);
 
     Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class);
