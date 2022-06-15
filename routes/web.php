@@ -18,7 +18,7 @@ Route::get('products', [ProductController::class, 'index'])->name('products');
 Route::apiResource('user', UserController::class)
     ->middleware(['auth:api', 'userBelongsToPage'])
     ->names('user')
-    ->except(['index', 'create']);
+    ->except(['index']);
 
 Route::prefix('user/{user}')->middleware(['auth:api', 'userBelongsToPage'])->group(function () {
     Route::apiResource('shoppinglist', ShoppinglistController::class)
@@ -27,5 +27,5 @@ Route::prefix('user/{user}')->middleware(['auth:api', 'userBelongsToPage'])->gro
 
     Route::apiResource('shoppinglist/{shoppinglist}/items', ShoppinglistItemController::class)
         ->names('shoppinglistitems')
-        ->except(['show', 'index', 'store']);
+        ->except(['show', 'index']);
 });

@@ -6,7 +6,1167 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: api/user
+    uri: /
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: |
+          <!DOCTYPE html>
+          <html lang="en">
+              <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                  <title>Laravel</title>
+
+                  <!-- Fonts -->
+                  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+                  <!-- Styles -->
+                  <style>
+                      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
+                  </style>
+
+                  <style>
+                      body {
+                          font-family: 'Nunito', sans-serif;
+                      }
+                  </style>
+              </head>
+              <body class="antialiased">
+                  <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+                      
+                      <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                          <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                              <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
+                                  <g clip-path="url(#clip0)" fill="#EF3B2D">
+                                      <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
+                                  </g>
+                              </svg>
+                          </div>
+
+                          <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                              <div class="grid grid-cols-1 md:grid-cols-2">
+                                  <div class="p-6">
+                                      <div class="flex items-center">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                          <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                                      </div>
+
+                                      <div class="ml-12">
+                                          <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                              Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                                      <div class="flex items-center">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                          <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
+                                      </div>
+
+                                      <div class="ml-12">
+                                          <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                              Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="p-6 border-t border-gray-200 dark:border-gray-700">
+                                      <div class="flex items-center">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                          <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
+                                      </div>
+
+                                      <div class="ml-12">
+                                          <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                              Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
+                                      <div class="flex items-center">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                          <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
+                                      </div>
+
+                                      <div class="ml-12">
+                                          <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                              Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
+                              <div class="text-center text-sm text-gray-500 sm:text-left">
+                                  <div class="flex items-center">
+                                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
+                                          <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                      </svg>
+
+                                      <a href="https://laravel.bigcartel.com" class="ml-1 underline">
+                                          Shop
+                                      </a>
+
+                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                                          <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                      </svg>
+
+                                      <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
+                                          Sponsor
+                                      </a>
+                                  </div>
+                              </div>
+
+                              <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+                                  Laravel v9.17.0 (PHP v8.1.5)
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </body>
+          </html>
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          set-cookie: 'laravel_session=eyJpdiI6IlQ5Wkxkb3ZTaDdIOG1EWjV6eHRKaFE9PSIsInZhbHVlIjoiTlVOeWc5VWU1anFZOHU0R2hqajFtVGJIZzZoUTV4VkFWL3l2cVRPb2tSeTVsbE1oWU5vWUNCUllEdGRMT0plUStxZFJOTk54am9yN1ZXdkJhdEUvS2tiUGQ1YkV0R2xqMkpIUjFQcG1VK0piZStwTWJQc0RqNDBvREltRHFnSGsiLCJtYWMiOiJjYThmZTI1YzcxN2ZkYzM4MTEwM2FkOWQ1MTcwODJmYzBmYTZlYjA3NDBhMmQ2NDVmYTUyN2I4YmUwY2Q3Nzg2IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: request-docs
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Method App\\Http\\Controllers\\UserController::store() does not exist",
+              "exception": "ReflectionException",
+              "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/rakutentech/laravel-request-docs/src/LaravelRequestDocs.php",
+              "line": 118,
+              "trace": [
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/rakutentech/laravel-request-docs/src/LaravelRequestDocs.php",
+                      "line": 118,
+                      "function": "__construct",
+                      "class": "ReflectionMethod",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/rakutentech/laravel-request-docs/src/LaravelRequestDocs.php",
+                      "line": 18,
+                      "function": "appendRequestRules",
+                      "class": "Rakutentech\\LaravelRequestDocs\\LaravelRequestDocs",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/rakutentech/laravel-request-docs/src/Controllers/LaravelRequestDocsController.php",
+                      "line": 23,
+                      "function": "getDocs",
+                      "class": "Rakutentech\\LaravelRequestDocs\\LaravelRequestDocs",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+                      "line": 54,
+                      "function": "index",
+                      "class": "Rakutentech\\LaravelRequestDocs\\Controllers\\LaravelRequestDocsController",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php",
+                      "line": 45,
+                      "function": "callAction",
+                      "class": "Illuminate\\Routing\\Controller",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+                      "line": 261,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\ControllerDispatcher",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+                      "line": 204,
+                      "function": "runController",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 725,
+                      "function": "run",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 726,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 703,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 667,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 656,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 167,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php",
+                      "line": 49,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 142,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 111,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 89,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 222,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 179,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 116,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 123,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 80,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 56,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php",
+                      "line": 55,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/Container.php",
+                      "line": 651,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 136,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Command/Command.php",
+                      "line": 308,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 121,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 998,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 299,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 171,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Application.php",
+                      "line": 102,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php",
+                      "line": 129,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: sanctum/csrf-cookie
+    metadata:
+      title: 'Return an empty response simply to trigger the storage of the CSRF cookie in the browser.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+          set-cookie: 'laravel_session=eyJpdiI6IkNKcUYvc2NxcHhPMmhKQmMzOHFhb2c9PSIsInZhbHVlIjoiRFJ1L2N2akNROEpDQjcyVDB0NGhublE2alZ2YW9BaU42bm4rNy9WWGpBSHAwa25ETlJPckEzVkdiNm12Qi93OHUwT1hPVU9WS0xCbUJWYjJhK0c1aVltcXZ3cm04ZHM1UXdCOEF4bGZUQVV3UXRTNWdjN0VsOHBjdk9qQzkrSnIiLCJtYWMiOiJjNjVlNTQ3YmFiY2Y4NzQ5MzM2YzFlNDdjNDMxNWEyYjQwYjQzZDAyMDllYzE5NGFmMTg3NGQ0MGU2NjcyZWQ3IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:12 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: _ignition/health-check
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"can_execute_commands":true}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: _ignition/execute-solution
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      solution:
+        name: solution
+        description: ''
+        required: true
+        example: ea
+        type: string
+        custom: []
+      parameters:
+        name: parameters
+        description: ''
+        required: false
+        example:
+          - laborum
+        type: 'string[]'
+        custom: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "Solution could not be found",
+              "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+              "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Application.php",
+              "line": 1143,
+              "trace": [
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+                      "line": 44,
+                      "function": "abort",
+                      "class": "Illuminate\\Foundation\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+                      "line": 64,
+                      "function": "abort"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/spatie/laravel-ignition/src/Http/Requests/ExecuteSolutionRequest.php",
+                      "line": 25,
+                      "function": "abort_if"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/spatie/laravel-ignition/src/Http/Requests/ExecuteSolutionRequest.php",
+                      "line": 32,
+                      "function": "getSolution",
+                      "class": "Spatie\\LaravelIgnition\\Http\\Requests\\ExecuteSolutionRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/spatie/laravel-ignition/src/Http/Controllers/ExecuteSolutionController.php",
+                      "line": 23,
+                      "function": "getRunnableSolution",
+                      "class": "Spatie\\LaravelIgnition\\Http\\Requests\\ExecuteSolutionRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php",
+                      "line": 48,
+                      "function": "__invoke",
+                      "class": "Spatie\\LaravelIgnition\\Http\\Controllers\\ExecuteSolutionController",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+                      "line": 261,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\ControllerDispatcher",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+                      "line": 204,
+                      "function": "runController",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 725,
+                      "function": "run",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/spatie/laravel-ignition/src/Http/Middleware/RunnableSolutionsEnabled.php",
+                      "line": 15,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Spatie\\LaravelIgnition\\Http\\Middleware\\RunnableSolutionsEnabled",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 726,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 703,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 667,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 656,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 167,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php",
+                      "line": 49,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 142,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 111,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 89,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 222,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 179,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 116,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 123,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 80,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 56,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php",
+                      "line": 55,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Container/Container.php",
+                      "line": 651,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 136,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Command/Command.php",
+                      "line": 308,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 121,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 998,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 299,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/symfony/console/Application.php",
+                      "line": 171,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Console/Application.php",
+                      "line": 102,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php",
+                      "line": 129,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/Users/rainaldo/Documents/GitHub/Boodschappenlijst/artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: _ignition/update-config
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      theme:
+        name: theme
+        description: 'Must be one of <code>light</code>, <code>dark</code>, or <code>auto</code>.'
+        required: true
+        example: auto
+        type: string
+        custom: []
+      editor:
+        name: editor
+        description: ''
+        required: true
+        example: magni
+        type: string
+        custom: []
+      hide_solutions:
+        name: hide_solutions
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        custom: []
+    responses:
+      -
+        status: 200
+        content: 'true'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: home
     metadata:
       title: ''
       description: ''
@@ -25,6 +1185,391 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          access-control-allow-origin: '*'
+          set-cookie: 'laravel_session=eyJpdiI6IlZITnZQcE92alNYMXNjZ2RuM0lHcHc9PSIsInZhbHVlIjoiTytybUVDSWRDWnRKTExRcldUY1lGOE44a1ZSN1ZyYUhVa25uWE9RRGJDb0xSVDJuYnBvK1ZGaGhQN3FIZ2k5Qkt4U0FNOGVBNDdnbnNzcEFGTzlZSVI3UG0zV1k2N1c2ZVNDc1lGYnA3NEZHTHQ2Tjhpa0VkWnd0bnNQQk52MFQiLCJtYWMiOiI1ZDMyMWQzNmZjYmE0Yjg4NTY0ODBiNzZiN2ExNDczOGEyYWVlZDdiMGNiNTEzY2E5YzllMDQzNTIyZGE5ZjNiIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: products
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"current_page":1,"data":[{"id":1,"name":"Jumbo Knoflook 100g","image":"82080NET-1_360x360_2.png","price":"1.09","store_id":2,"created_at":null,"updated_at":null},{"id":2,"name":"Jumbo Ribbel Naturel Chips 250g","image":"271120200354_398354ZK-1_360x360_2.png","price":"0.99","store_id":2,"created_at":null,"updated_at":null},{"id":3,"name":"Jumbo Boerenkool 400g","image":"050920210128_452214ZK-1_360x360_2.png","price":"1.85","store_id":2,"created_at":null,"updated_at":null},{"id":4,"name":"Jumbo Achterham 100g","image":"160120202336_338268KGR-1_360x360_2.png","price":"2.00","store_id":2,"created_at":null,"updated_at":null},{"id":5,"name":"Cristaline Bronwater 12 x 500ml","image":"060920210219_437703PAK-1_360x360_2.png","price":"1.98","store_id":2,"created_at":null,"updated_at":null},{"id":6,"name":"Bladmandarijnen 800g","image":"061120190844_220757BAK-1_360x360_2.png","price":"2.99","store_id":2,"created_at":null,"updated_at":null},{"id":7,"name":"Jumbo Mandarijnen 28 Stuks 2, 3kg","image":"181220191137_317996KRT-1_360x360_2.png","price":"5.49","store_id":2,"created_at":null,"updated_at":null},{"id":8,"name":"Jumbo Rucola Gewassen 85g","image":"080420210941_362302ZK-1_360x360_2.png","price":"0.89","store_id":2,"created_at":null,"updated_at":null},{"id":9,"name":"Zespri Sungold Kiwifruit 3 Stuks","image":"110520191813_211863BAK-1_360x360_2.png","price":"2.99","store_id":2,"created_at":null,"updated_at":null},{"id":10,"name":"Jumbo Verse Karnemelk 1L","image":"070820190213_172026PAK-1_360x360_2.png","price":"0.79","store_id":2,"created_at":null,"updated_at":null},{"id":11,"name":"Jumbo Karnemelk & Halfvolle Melk","image":"030520211600_441710STK-1_360x360_2.png","price":"1.68","store_id":2,"created_at":null,"updated_at":null},{"id":12,"name":"Jumbo Biologische Verse Gember 100g","image":"201220192359_208888KGR-1_360x360_2.png","price":"0.99","store_id":2,"created_at":null,"updated_at":null},{"id":13,"name":"Blue Band Halvarine Vegan en 100% Plantaardig met 8 Vitamines Kuip 500g","image":"300620210016_206940STK-1_360x360_2.png","price":"1.34","store_id":2,"created_at":null,"updated_at":null},{"id":14,"name":"Jumbo - Witte Baguette - 2 Stuks","image":"290720200416_225592PAK-1_360x360_2.png","price":"0.49","store_id":2,"created_at":null,"updated_at":null},{"id":15,"name":"Jumbo Mini Wortelen 325g","image":"171220191005_329564STK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":16,"name":"Kanzi Appels 1kg","image":"100920190348_283644STK-1_360x360_2.png","price":"2.99","store_id":2,"created_at":null,"updated_at":null},{"id":17,"name":"Jumbo Filet Americain Naturel 150g","image":"061120210039_291849BAK-1_360x360_2.png","price":"2.56","store_id":2,"created_at":null,"updated_at":null},{"id":18,"name":"Jumbo Gerookte Spekreepjes 2 x 125g","image":"060520190033_92452TRA-1_360x360_2.png","price":"3.75","store_id":2,"created_at":null,"updated_at":null},{"id":19,"name":"Zespri Green Kiwifruit 1kg","image":"050420192320_155557BAK-1_360x360_2.png","price":"3.69","store_id":2,"created_at":null,"updated_at":null},{"id":20,"name":"Jumbo Volle Yoghurt 1L","image":"070820190307_172424PAK-1_360x360_2.png","price":"0.95","store_id":2,"created_at":null,"updated_at":null},{"id":21,"name":"Komo Trekbandzakken 60 Liter 15 Stuks","image":"110620200441_28215ROL-1_360x360_2.png","price":"1.67","store_id":2,"created_at":null,"updated_at":null},{"id":22,"name":"Lay''s Naturel Chips 335gr","image":"050220210002_181217STK-1_360x360_2.png","price":"1.93","store_id":2,"created_at":null,"updated_at":null},{"id":23,"name":"Jumbo Chocolate Chip Cookies 12 Stuks 225g","image":"191120190445_214363PAK-1_360x360_2.png","price":"0.79","store_id":2,"created_at":null,"updated_at":null},{"id":24,"name":"Jumbo Snijworst 140g","image":"271120200049_270770STK-1_360x360_2.png","price":"2.42","store_id":2,"created_at":null,"updated_at":null},{"id":25,"name":"Jumbo Rundergehakt 1kg","image":"070520192357_180842BAK-1_360x360_2.png","price":"5.50","store_id":2,"created_at":null,"updated_at":null},{"id":26,"name":"Goudse Kaas Jong Belegen 48+ Stuk Voordeelverpakking 1000g","image":"140920210529_453408STK-1_360x360_2.png","price":"6.41","store_id":2,"created_at":null,"updated_at":null},{"id":27,"name":"Jumbo Culinair voor Bakken, Koken en Roerbakken 750ml","image":"191120200238_391993FLS-1_360x360_2.png","price":"1.53","store_id":2,"created_at":null,"updated_at":null},{"id":28,"name":"Chocomel Vol 1L","image":"101120211954_75729PAK-1_360x360_2.png","price":"1.89","store_id":2,"created_at":null,"updated_at":null},{"id":29,"name":"Jumbo Geraspt Jong Belegen Kaas 30+ 150g","image":"101220201142_395038ZK-1_360x360_2.png","price":"2.07","store_id":2,"created_at":null,"updated_at":null},{"id":30,"name":"Jumbo Naturel Beschuit 13 Stuks","image":"190720192317_290514STK-1_360x360_2.png","price":"0.35","store_id":2,"created_at":null,"updated_at":null},{"id":31,"name":"Optimel Drinkyoghurt mango passievrucht 0% vet 1 x 1. 5L","image":"030920212200_347823PAK-1_360x360_2.png","price":"1.95","store_id":2,"created_at":null,"updated_at":null},{"id":32,"name":"Zespri Sun Gold Kiwifruit 6 Stuks","image":"140520191239_206721BAK-1_360x360_2.png","price":"4.75","store_id":2,"created_at":null,"updated_at":null},{"id":33,"name":"Jumbo Mini Krieltjes Bistro 600g","image":"020920201043_211763ZK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":34,"name":"Jumbo IJsbergsla Fijngesneden 100 g - Kleinverpakking","image":"160120191138_212608STK-1_360x360_2.png","price":"0.69","store_id":2,"created_at":null,"updated_at":null},{"id":35,"name":"Jumbo Nieuwe Standaard Kip Filet 2 Stuks ca. 390g","image":"050220212347_308406KGR-1_360x360_2.png","price":"4.78","store_id":2,"created_at":null,"updated_at":null},{"id":36,"name":"Jumbo Rode Uien 500g","image":"030820190452_213005NET-1_360x360_2.png","price":"0.99","store_id":2,"created_at":null,"updated_at":null},{"id":37,"name":"Jumbo Franse Kwark Mager 500g","image":"221020201651_198301STK-1_360x360_2.png","price":"0.69","store_id":2,"created_at":null,"updated_at":null},{"id":38,"name":"Jumbo Aardappelen Vastkokend 1kg","image":"271020201100_380101ZK-1_360x360_2.png","price":"1.69","store_id":2,"created_at":null,"updated_at":null},{"id":39,"name":"Neutraal Vanillevla 1L","image":"181220201049_305470PAK-1_360x360_2.png","price":"0.85","store_id":2,"created_at":null,"updated_at":null},{"id":40,"name":"Jumbo Sinaasappelsap 1, 5L","image":"090520192018_204242PAK-1_360x360_2.png","price":"1.43","store_id":2,"created_at":null,"updated_at":null},{"id":41,"name":"ERU Goudkuipje Naturel 200g","image":"210520200900_360350STK-1_360x360_2.png","price":"1.97","store_id":2,"created_at":null,"updated_at":null},{"id":42,"name":"Schouderham Gerookt 175g","image":"080520190139_193936PAK-1_360x360_2.png","price":"1.27","store_id":2,"created_at":null,"updated_at":null},{"id":43,"name":"Jumbo Oven Frites 1kg","image":"120520191742_180679ZK-1_360x360_2.png","price":"1.39","store_id":2,"created_at":null,"updated_at":null},{"id":44,"name":"Jumbo Zuurkool Naturel 520g","image":"060520190245_163474PAK-1_360x360_2.png","price":"0.59","store_id":2,"created_at":null,"updated_at":null},{"id":45,"name":"Jumbo Tomaten Puree 140g","image":"100320210446_218380BLK-1_360x360_2.png","price":"0.39","store_id":2,"created_at":null,"updated_at":null},{"id":46,"name":"Scharreleieren 30 Stuks","image":"130420212355_297037TRA-1_360x360_2.png","price":"4.85","store_id":2,"created_at":null,"updated_at":null},{"id":47,"name":"Jumbo - Witte Kaiserbroodjes - 4 Stuks","image":"110820201542_308328ZK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":48,"name":"Jumbo Rijstwafels Zeezout 12 Stuks","image":"090520192123_201237STK-1_360x360_2.png","price":"0.88","store_id":2,"created_at":null,"updated_at":null},{"id":49,"name":"Jumbo Nieuwe Standaard Kipdijfilet Blokjes 350g","image":"140920190154_308373BAK-1_360x360_2.png","price":"3.75","store_id":2,"created_at":null,"updated_at":null},{"id":50,"name":"Jumbo Vanillevla 1L","image":"040420200024_236884PAK-1_360x360_2.png","price":"1.18","store_id":2,"created_at":null,"updated_at":null},{"id":51,"name":"Jumbo - Roomboter Croissants - 4 Stuks","image":"170520211050_308317ZK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":52,"name":"Jumbo Courgette en Trostomaten","image":"040220201027_354769STK-1_360x360_2.png","price":"3.04","store_id":2,"created_at":null,"updated_at":null},{"id":53,"name":"Jumbo Tros Tomaten 5 Stuks","image":"100920200448_302231STK-1_360x360_2.png","price":"2.39","store_id":2,"created_at":null,"updated_at":null},{"id":54,"name":"Garlan Verse-Roomkaas met Kruiden 70+ 150g","image":"270720190856_285530STK-1_360x360_2.png","price":"0.69","store_id":2,"created_at":null,"updated_at":null},{"id":55,"name":"Jumbo Franse Kwark Mager 1kg","image":"140120211654_198300STK-1_360x360_2.png","price":"1.29","store_id":2,"created_at":null,"updated_at":null},{"id":56,"name":"Jumbo - Bruin Tijgerbrood","image":"280720202350_300142STK-1_360x360_2.png","price":"1.19","store_id":2,"created_at":null,"updated_at":null},{"id":57,"name":"Jumbo Ribbel Paprika Chips 250g","image":"281120200338_398872ZK-1_360x360_2.png","price":"0.99","store_id":2,"created_at":null,"updated_at":null},{"id":58,"name":"Jumbo Perssinaasappelen 2kg","image":"100520190450_40489NET-1_360x360_2.png","price":"2.99","store_id":2,"created_at":null,"updated_at":null},{"id":59,"name":"Jumbo Aardbei Extra Jam 440g","image":"010520210148_420635POT-1_360x360_2.png","price":"0.96","store_id":2,"created_at":null,"updated_at":null},{"id":60,"name":"Jumbo Italiaanse Roerbakmix 400g","image":"291220180343_211728STK-1_360x360_2.png","price":"1.89","store_id":2,"created_at":null,"updated_at":null},{"id":61,"name":"Jumbo Milde Halfvolle Yoghurt 1L","image":"031120211311_384773PAK-1_360x360_2.png","price":"0.89","store_id":2,"created_at":null,"updated_at":null},{"id":62,"name":"Campina Vlaflip Vanille 1L","image":"021020210029_188332PAK-1_360x360_2.png","price":"1.79","store_id":2,"created_at":null,"updated_at":null},{"id":63,"name":"Jumbo Aardappelschijfjes 600g","image":"020920201041_211761ZK-1_360x360_2.png","price":"0.88","store_id":2,"created_at":null,"updated_at":null},{"id":64,"name":"Jumbo Verse Volle Melk 1L","image":"070820190428_31814PAK-1_360x360_2.png","price":"0.95","store_id":2,"created_at":null,"updated_at":null},{"id":65,"name":"Jumbo Stamppot Aardappelen 1kg - Voordeelverpakking","image":"200220210358_211819ZK-1_360x360_2.png","price":"1.29","store_id":2,"created_at":null,"updated_at":null},{"id":66,"name":"Jumbo Avocado 2 Stuks","image":"081220190908_300262STK-1_360x360_2.png","price":"2.99","store_id":2,"created_at":null,"updated_at":null},{"id":67,"name":"Jumbo Jonagold Extra Voordeel 1, 5kg","image":"090920202348_306033ZK-1_360x360_2.png","price":"2.79","store_id":2,"created_at":null,"updated_at":null},{"id":68,"name":"Jumbo Halvarine 500g","image":"300920200059_383455CUP-1_360x360_2.png","price":"0.89","store_id":2,"created_at":null,"updated_at":null},{"id":69,"name":"Jumbo Volkoren Beschuit 13 Stuks","image":"271120190431_290515STK-1_360x360_2.png","price":"0.37","store_id":2,"created_at":null,"updated_at":null},{"id":70,"name":"Jumbo Rundergehakt 300g","image":"301220201334_173434BAK-1_360x360_2.png","price":"2.39","store_id":2,"created_at":null,"updated_at":null},{"id":71,"name":"Jumbo Eierkoeken 10 stuks","image":"200120202241_42732PAK-1_360x360_2.png","price":"0.89","store_id":2,"created_at":null,"updated_at":null},{"id":72,"name":"Jumbo Geschrapte Wortelen 500g","image":"160120191135_212163STK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":73,"name":"Jumbo Green Ice Tea Pure 1,5L","image":"180920200144_293792PAK-1_360x360_2.png","price":"0.79","store_id":2,"created_at":null,"updated_at":null},{"id":74,"name":"Jumbo - Roomboter Croissants Voorgebakken - 4 Stuks","image":"230720202352_188503PAK-1_360x360_2.png","price":"0.99","store_id":2,"created_at":null,"updated_at":null},{"id":75,"name":"Douwe Egberts Aroma Rood Filterkoffie 500g","image":"061020210000_220752PAK-1_360x360_2.png","price":"6.30","store_id":2,"created_at":null,"updated_at":null},{"id":76,"name":"Jumbo Kroepoek Cassave 75g","image":"131220192237_220628ZK-1_360x360_2.png","price":"0.98","store_id":2,"created_at":null,"updated_at":null},{"id":77,"name":"Iglo Spinazie \u00e1 la cr\u00e8me 500g","image":"061020210641_388824DS-1_360x360_2.png","price":"1.38","store_id":2,"created_at":null,"updated_at":null},{"id":78,"name":"Jumbo Achterham 150g","image":"281120200146_63100PAK-1_360x360_2.png","price":"2.47","store_id":2,"created_at":null,"updated_at":null},{"id":79,"name":"Jumbo - Pita Broodjes - 2 x 5 Stuks","image":"240720202314_306323ZK-1_360x360_2.png","price":"0.69","store_id":2,"created_at":null,"updated_at":null},{"id":80,"name":"Schouderham Blokjes 300g","image":"080520190527_192680PAK-1_360x360_2.png","price":"1.99","store_id":2,"created_at":null,"updated_at":null},{"id":81,"name":"Becel Light Margarine 575g","image":"161120210025_455850CUP-1_360x360_2.png","price":"2.97","store_id":2,"created_at":null,"updated_at":null},{"id":82,"name":"Goudse Kaas 48+ Jong Stuk Voordeelverpakking 1000g","image":"140920210041_453414STK-1_360x360_2.png","price":"5.99","store_id":2,"created_at":null,"updated_at":null},{"id":83,"name":"Jumbo Borrelnoten & Paprika Ribbel Chips","image":"100520211446_442790STK-1_360x360_2.png","price":"2.56","store_id":2,"created_at":null,"updated_at":null},{"id":84,"name":"Jumbo Cocktail Borrelnoten 300g","image":"240720190713_268976STK-1_360x360_2.png","price":"1.57","store_id":2,"created_at":null,"updated_at":null},{"id":85,"name":"Jumbo Luchtige Crackers Volkoren met Rijstebloem 2 x 125g","image":"120520190208_189693PAK-1_360x360_2.png","price":"0.78","store_id":2,"created_at":null,"updated_at":null},{"id":86,"name":"Jumbo Knakworst 3 x 400g","image":"200220200043_167019BLK-1_360x360_2.png","price":"2.79","store_id":2,"created_at":null,"updated_at":null},{"id":87,"name":"Ontbijtspek Gerookt 150g","image":"140220200852_351875PAK-1_360x360_2.png","price":"1.39","store_id":2,"created_at":null,"updated_at":null},{"id":88,"name":"Jumbo Soepballetjes Rund ca. 250g","image":"160120191159_136490KGR-1_360x360_2.png","price":"1.99","store_id":2,"created_at":null,"updated_at":null},{"id":89,"name":"Coca-Cola Zero Sugar 1L","image":"090920211339_429170FLS-1_360x360_2.png","price":"1.87","store_id":2,"created_at":null,"updated_at":null},{"id":90,"name":"Coca-Cola Zero Sugar 5+1 Gratis PET Fles 6 x 1, 5L","image":"220920210437_429169PAK-1_360x360_2.png","price":"11.35","store_id":2,"created_at":null,"updated_at":null},{"id":91,"name":"Jumbo - Bruin Brood","image":"290720200013_300143STK-1_360x360_2.png","price":"1.00","store_id":2,"created_at":null,"updated_at":null},{"id":92,"name":"LU Bastogne koekjes Original 260g","image":"121020210616_173140KST-1_360x360_2.png","price":"1.36","store_id":2,"created_at":null,"updated_at":null},{"id":93,"name":"Jumbo Fijne Soepgroente 400 g - Voordeelverpakking","image":"111220190552_329514ZK-1_360x360_2.png","price":"1.36","store_id":2,"created_at":null,"updated_at":null},{"id":94,"name":"Campina Dessert Zacht en Luchtig Framboos 1L","image":"011020212354_527059PAK-1_360x360_2.png","price":"1.63","store_id":2,"created_at":null,"updated_at":null},{"id":95,"name":"Campina Vla Pakket","image":"220120201123_351703STK-1_360x360_2.png","price":"3.42","store_id":2,"created_at":null,"updated_at":null},{"id":96,"name":"Cheetos Nibb-it Sticks Naturel Chips 150gr","image":"050220210418_196235STK-1_360x360_2.png","price":"1.70","store_id":2,"created_at":null,"updated_at":null},{"id":97,"name":"Jumbo Cola Zero Sugar 6 x 1,5L","image":"180320211603_389703PAK-1_360x360_2.png","price":"3.85","store_id":2,"created_at":null,"updated_at":null},{"id":98,"name":"Lay''s Superchips Paprika 300gr","image":"050920212156_451801ZK-1_360x360_2.png","price":"2.12","store_id":2,"created_at":null,"updated_at":null},{"id":99,"name":"Jumbo Hamburger Rund 4 stuks 440g","image":"110520191354_87910BAK-1_360x360_2.png","price":"2.96","store_id":2,"created_at":null,"updated_at":null},{"id":100,"name":"Goudeerlijk Boeren Donker Meergranen Volkoren Brood - Vriesvers","image":"190320211650_175931ZK-9_360x360_2.png","price":"2.19","store_id":2,"created_at":null,"updated_at":null}],"first_page_url":"http:\/\/localhost\/products?page=1","from":1,"last_page":313,"last_page_url":"http:\/\/localhost\/products?page=313","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/products?page=1","label":"1","active":true},{"url":"http:\/\/localhost\/products?page=2","label":"2","active":false},{"url":"http:\/\/localhost\/products?page=3","label":"3","active":false},{"url":"http:\/\/localhost\/products?page=4","label":"4","active":false},{"url":"http:\/\/localhost\/products?page=5","label":"5","active":false},{"url":"http:\/\/localhost\/products?page=6","label":"6","active":false},{"url":"http:\/\/localhost\/products?page=7","label":"7","active":false},{"url":"http:\/\/localhost\/products?page=8","label":"8","active":false},{"url":"http:\/\/localhost\/products?page=9","label":"9","active":false},{"url":"http:\/\/localhost\/products?page=10","label":"10","active":false},{"url":null,"label":"...","active":false},{"url":"http:\/\/localhost\/products?page=312","label":"312","active":false},{"url":"http:\/\/localhost\/products?page=313","label":"313","active":false},{"url":"http:\/\/localhost\/products?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/localhost\/products?page=2","path":"http:\/\/localhost\/products","per_page":100,"prev_page_url":null,"to":100,"total":31287}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6IklPOVhpblRhS2xHaHZ5dkZFRVYrU0E9PSIsInZhbHVlIjoiWm5DNW41SHJQMTdzcVVNYWsvK1QxVEo5M0R5b0QwYy9VRFd4QmExZlFETWZsZUxXUXQwWGtqVVowUVhnZjFlQ2lZSndYRGlPNC8vZFhIelY1YzJiWXJaTm02V3Q3dHNMbmZDcVo0Y2JSWkNDakhUZktKOFdYMnRKN3VYSFk0QjQiLCJtYWMiOiI4OTgxYTYxMzRkMjkxNzI2NmY1MTMyYWYxZGY2N2ZhMmI2Y2YzZjJjOWZjZmQ0NjEwOTQ1NDgyOTBjZTcyNjM4IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'user/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6IkdoUkN0SG1lV1ZxUmVKdEpLT21zQWc9PSIsInZhbHVlIjoiSG1KRHdtMkd0UC9jRGIvOXNiaG9qeUliaXlsTmcvVXBsYldCS0g1cWdjL0NnTXBFTWNtb01VTHlkRmFGTDY0NXhDaHZMdy95N1lmbzJVdzhuM0ZiaXZ0YThyTjE1a01FR0FqMlMyaWV0S0hTTHkvclRZL3hVQjdNc3hTNncvcW8iLCJtYWMiOiI4ZmFhYWNkNDJlOWNiYjZkNjBhMTJjNDJhOTE2YmI2ZjdmZWM2YzgxNGU3ZjBiNGMwMzY0NDU4ODI1NDYwOTgwIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'user/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 50 characters. Must be at least 2 characters.'
+        required: false
+        example: k
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 50 characters. Must be at least 2 characters.'
+        required: false
+        example: ''
+        type: string
+        custom: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6IlBTZGk0YXdQMi9Vcm5RRWtZcVVtbkE9PSIsInZhbHVlIjoiWXhMMzhva1pYZ01ta05WZDg5N2NKdWhvUDJSZFphdFdRTThuU2JqUlZTN0pPTGgxUFhaK2gwTzUrTjRKTXdaSWlyTUlPS2lickxQMk1MbVRSWkpYVHpWWTdDL0JXTTIwU1FtZ2Z5Z1BGdVFkSHhxUFBOOEFlQnZTZnNla1l5NCsiLCJtYWMiOiJiOGEyNTVlM2FjY2IzZTM2NGU2NGYxNmNlMzQxZWM1OGYyMDUyY2ZjMTMyOGE4MjhiZGQwYmIxMzBlOTI3YjY0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'user/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6IkhaVitCeHB4MU5GUDFteGlwT29uM3c9PSIsInZhbHVlIjoiaUI2S1hQbXBwVm05eG9HZ2o0TGpUQ3BwOTlGbE0wTVhKaXRIaldOMVZ0MGV3NzU4QzhmbHFFTkZCQk51eWowZlZFaUFXKzBrQzloQUlhQnF4cmNIQ2ZBUWhzOWdjKzIwNXpqeXhyRXRKVHNEZHVFVU1KZVdYK0xKMUk0ZHNid3MiLCJtYWMiOiIxYjYzZWJhM2IwMjhlZjIyMDE2OWIzYzNjOWYxMWU1NmYyMTg3NjI2NzNmNjkzODM0ODMzNWZmNmNjYjJjNzg1IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'user/{user}/shoppinglist'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 9
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6Ik1USHNKSHZOTjNITjQyYVlIZ011cHc9PSIsInZhbHVlIjoiTEtJYVdXUms1dUdUdkt6Z0w3bEw3bldRYmZ6SEJSaVFIL0VIVm8vd1dKYmRSTEhsMWlReElSRCsvVEQrZ0tTZGFTejAyWUl4YTMwalRjUmFUY3A2VzN2TU9WemRXbFRrRnRJTzB5Rmhtc2hBajl1NDBNaUlJaExZNXBMcFF0aG4iLCJtYWMiOiJlMjRhZGY3OTMxMjE4MTM3NTc5OWM1YmU5YjVhNTVmNDZkYjQzOTg1MjBmNzU4NTAwZmY3OWY4ZmE4OTRhZmFiIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'user/{user}/shoppinglist'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: ygqjfaqrqrowlnaehpzuchnjsdojlvlztderecqsmwclzplbpdawkmvrdoexbxocslysxgjaefdkjfxnkjwwyhykmizqcbmwmlgxljyjhglwtfwoqrwmrytdcwnotfossyexcffmdxdibmwydqrmvfxdmden
+        type: string
+        custom: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6IjRFZUZNRE5YeERmRlR0ZjFNUDZTR0E9PSIsInZhbHVlIjoicVVJTEY5NXI4VktkMHlXTGFCRU9qSno0azUrK2pKK2paVFNhR0V6ak5xTWRWSmhoeXZ3UG5BVzNlblFJV0JMN2hsa1MzRjlQazRLSEhJT2YxOWxPZ3VqNTYwSGJwbFFtSXRJME5kQ1owNG94eFl2SVRJL3dvcTVSeXJZaWJmdlciLCJtYWMiOiIwZjI3YjJlNWRiZDVlN2VhMTA4NTkyYWM4NzIxNzFmMDc1NTljMWI3ODNhNTM4MThkODE2ZmUzZGY2Y2RhODI0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'user/{user}/shoppinglist/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+      id:
+        name: id
+        description: 'The ID of the shoppinglist.'
+        required: true
+        example: 5
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6ImE5UmNXang4dkNpSVVYNFp3OGprclE9PSIsInZhbHVlIjoiWUtPb2pJQnY2dG9TOGE4OU5WelNqYk5VaTVlNFNCVS8vTWNsQUNRV2xPbTFNb2ZKNWU1dmJJZUx1WnVFWXJWQ3hIMGVPQURTbXRrcjFoa0VIdHFpT09IK1BRQ29GQktoRWlGVjVtdTcxSTBtbXpjZE1RbkVSckc2NktaQmVNUlkiLCJtYWMiOiI5YzFjMzdlY2JhYzBlOGY5OGRlOTQ5NTRhMmZkYmE4ZWRjNzE2YmNiMWIzYzk4NzQzOTZkYWQxOWMwZDJiOGQ0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'user/{user}/shoppinglist/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+      id:
+        name: id
+        description: 'The ID of the shoppinglist.'
+        required: true
+        example: 5
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6InNaMk9VbFRiY09mYWdNZXlqNnBBcmc9PSIsInZhbHVlIjoiOHVEd2h0MzBvcnl6SE10VGZkRFpObitHbnA3RlA2MEQyc3lpQ2RCV0NmU3FwRTRSUUEwRzBoT1phendPQUtFL2VXNlJBQzRLVS91MUV1NW56cjNLcmJSb0VHdnpIUUhkNjhIY2lkZzgzaW9tNlFYS0Y3T0R1ZkhwUVNmRzNacG4iLCJtYWMiOiI1NmJjNjllMTExZmRiNjFmZDY3ODJjYWQ3ZmFiZjUxNGJhMDYwMjE0YWZlZGY0MDk5ZTlhNjU5ZjcyOTQyODIxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'user/{user}/shoppinglist/{shoppinglist}/items/{item}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+      shoppinglist:
+        name: shoppinglist
+        description: ''
+        required: true
+        example: 5
+        type: integer
+        custom: []
+      item:
+        name: item
+        description: ''
+        required: true
+        example: 8
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      amount:
+        name: amount
+        description: 'Must not be greater than 255.'
+        required: true
+        example: 65
+        type: integer
+        custom: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6InlvL1E3Q3lKTFdQYnBaNXFDRXlyNEE9PSIsInZhbHVlIjoiSFpsRlo5MnltbzNzeXVFbWxQTzdoc0R2RnBZVmVKWG16Vm1UaG1uYVFOdjVKL3FJR0w4YjN0YXRDRVJDbDFaM2M5YXliVEZOUFlQWjV2NER3SW94dVZKVmlaOFJ0Zlo3UDZ1MGdXejgrcDJnbWMvamlwMVBTNjlXU2FFblJoWnQiLCJtYWMiOiI0OWY4NDg3Y2NiMzc2NjI5MTU5ZDA3ZDYyMTk2Y2ZhODk4NTFmY2ZhZDRmZTAyNzk3NmFlNTQ0NDRlZWM3N2MxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'user/{user}/shoppinglist/{shoppinglist}/items/{item}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user:
+        name: user
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+      shoppinglist:
+        name: shoppinglist
+        description: ''
+        required: true
+        example: 5
+        type: integer
+        custom: []
+      item:
+        name: item
+        description: ''
+        required: true
+        example: 3
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'laravel_session=eyJpdiI6Ii8xTGZnazh0c0c1N21DWGNQejRIaHc9PSIsInZhbHVlIjoieW1RYWo0aWpDQkNrUlU4elRoWlZGY0F4Q3EzVHBSTjBEUTNlSDRyK3Q3VEltdnhQS2JzNXVKOGtic05wVkw3T1kreVRrdXZ6b05kWWZHMjNXZEJ5SWdmdmNJeStNMGM0ZmNpUTdLd2IxRkRFQmJhSHRyU2h6UEhGNjJpSDBIZGoiLCJtYWMiOiJlNDcyZjU0NTAwMTVlZmUyOWJiMWVmYjdkMTIyM2Y2NWFkN2U4M2I0NGI5ZTUyZWI3ZDBmMWVjNjU2ZjBkM2U3IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
     responseFields: []

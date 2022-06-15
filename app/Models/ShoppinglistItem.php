@@ -14,7 +14,8 @@ class ShoppinglistItem extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'amount'
+        'amount',
+        'product_id',
     ];
 
     public function shoppinglists(): BelongsTo

@@ -8,8 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../docs/css/theme-default.style.css" media="screen">
-    <link rel="stylesheet" href="../docs/css/theme-default.print.css" media="print">
+    <link rel="stylesheet" href="{{ asset("/vendor/scribe/css/theme-default.style.css") }}" media="screen">
+    <link rel="stylesheet" href="{{ asset("/vendor/scribe/css/theme-default.print.css") }}" media="print">
 
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 
@@ -30,9 +30,9 @@
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
-    <script src="../docs/js/tryitout-3.30.0.js"></script>
+    <script src="{{ asset("/vendor/scribe/js/tryitout-3.30.0.js") }}"></script>
 
-    <script src="../docs/js/theme-default-3.30.0.js"></script>
+    <script src="{{ asset("/vendor/scribe/js/theme-default-3.30.0.js") }}"></script>
 
 </head>
 
@@ -41,7 +41,7 @@
 <a href="#" id="nav-button">
     <span>
         MENU
-        <img src="../docs/images/navbar.png" alt="navbar-image" />
+        <img src="{{ asset("/vendor/scribe/images/navbar.png") }}" alt="navbar-image" />
     </span>
 </a>
 <div class="tocify-wrapper">
@@ -92,6 +92,9 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-POST_ignition-update-config">
                         <a href="#endpoints-POST_ignition-update-config">POST _ignition/update-config</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-user">
+                        <a href="#endpoints-GETapi-user">GET api/user</a>
+                    </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-GEThome">
                         <a href="#endpoints-GEThome">GET home</a>
                     </li>
@@ -132,8 +135,8 @@
             </div>
 
             <ul class="toc-footer" id="toc-footer">
-                            <li><a href="../docs/collection.json">View Postman collection</a></li>
-                            <li><a href="../docs/openapi.yaml">View OpenAPI spec</a></li>
+                            <li><a href="{{ route("scribe.postman") }}">View Postman collection</a></li>
+                            <li><a href="{{ route("scribe.openapi") }}">View OpenAPI spec</a></li>
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
@@ -154,7 +157,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <pre><code class="language-yaml">http://localhost</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>Authenticate requests to this API's endpoints by sending an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_AUTH_KEY}"</code></strong>.</p>
+<p>This API is authenticated by sending an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_AUTH_KEY}"</code></strong>.</p>
 <p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
 <p>You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.</p>
 
@@ -207,7 +210,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
-set-cookie: laravel_session=eyJpdiI6IlQ5Wkxkb3ZTaDdIOG1EWjV6eHRKaFE9PSIsInZhbHVlIjoiTlVOeWc5VWU1anFZOHU0R2hqajFtVGJIZzZoUTV4VkFWL3l2cVRPb2tSeTVsbE1oWU5vWUNCUllEdGRMT0plUStxZFJOTk54am9yN1ZXdkJhdEUvS2tiUGQ1YkV0R2xqMkpIUjFQcG1VK0piZStwTWJQc0RqNDBvREltRHFnSGsiLCJtYWMiOiJjYThmZTI1YzcxN2ZkYzM4MTEwM2FkOWQ1MTcwODJmYzBmYTZlYjA3NDBhMmQ2NDVmYTUyN2I4YmUwY2Q3Nzg2IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Im00b0JmbTZ5WGxrTTY1RmpQUnZUSUE9PSIsInZhbHVlIjoiVWlXWXUvc3ZGdFFkbU5FOEM2WXpEUGZGcFZGZnRNb0VHMTdxeGJrMTY5MzcvM3kyOE90NGtaU25QcFc2ekE3VjdFd0ZwU016cVhmazFhdEhDV2M2ZFNKY1U5MlJyVk90OFlTeFNMbzlMVEdGb1piZzB0ZmJ5bmczNjhXZWFPSVYiLCJtYWMiOiI5MDA5NWIxMmQ1ODM2YTk0M2IxZDI3ZWU3OWI0OTVhZTM0ZmQ2OWJiNDNhZWFhMmRjNjhhZDY2NDBjN2UwYWVmIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -931,7 +934,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 access-control-allow-origin: *
-set-cookie: laravel_session=eyJpdiI6IkNKcUYvc2NxcHhPMmhKQmMzOHFhb2c9PSIsInZhbHVlIjoiRFJ1L2N2akNROEpDQjcyVDB0NGhublE2alZ2YW9BaU42bm4rNy9WWGpBSHAwa25ETlJPckEzVkdiNm12Qi93OHUwT1hPVU9WS0xCbUJWYjJhK0c1aVltcXZ3cm04ZHM1UXdCOEF4bGZUQVV3UXRTNWdjN0VsOHBjdk9qQzkrSnIiLCJtYWMiOiJjNjVlNTQ3YmFiY2Y4NzQ5MzM2YzFlNDdjNDMxNWEyYjQwYjQzZDAyMDllYzE5NGFmMTg3NGQ0MGU2NjcyZWQ3IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:12 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Ijh5QkxLVzRUa1hIMVg4aWZwSVlNc2c9PSIsInZhbHVlIjoiYWtKMDBQcjVjNW5CdldpMTFnSXhGbXVIckdRbHRqWVZQYzN4UGI5cGhPOXBCWnFvY0pzYllkcHlHVC9RQkYwTmRIeENJenhneWRrRDE5VWpqZGx2OW1jM2Z1UHl3cFlBZEZOc0EyNlRLSVRiYnpRR1hPZTRRbnF1WGwwVkFiMmoiLCJtYWMiOiJhOWQyYzQ5M2ZlZDc3ZGNlMzkyNWFkZGZkZWIyYWE0ZGZkYWNiNDlhNDRlOGZkNTRlZTdlNmE1MzY2NTlmN2JhIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 <code>[Empty response]</code>
@@ -1089,9 +1092,9 @@ content-type: application/json
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"solution\": \"ea\",
+    \"solution\": \"nihil\",
     \"parameters\": [
-        \"laborum\"
+        \"quia\"
     ]
 }"
 </code></pre></div>
@@ -1108,9 +1111,9 @@ const headers = {
 };
 
 let body = {
-    "solution": "ea",
+    "solution": "nihil",
     "parameters": [
-        "laborum"
+        "quia"
     ]
 };
 
@@ -1620,7 +1623,7 @@ content-type: application/json
                 <input type="text"
                name="solution"
                data-endpoint="POST_ignition-execute-solution"
-               value="ea"
+               value="nihil"
                data-component="body" hidden>
     <br>
 
@@ -1657,9 +1660,9 @@ content-type: application/json
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"theme\": \"auto\",
-    \"editor\": \"magni\",
-    \"hide_solutions\": true
+    \"theme\": \"dark\",
+    \"editor\": \"hic\",
+    \"hide_solutions\": false
 }"
 </code></pre></div>
 
@@ -1675,9 +1678,9 @@ const headers = {
 };
 
 let body = {
-    "theme": "auto",
-    "editor": "magni",
-    "hide_solutions": true
+    "theme": "dark",
+    "editor": "hic",
+    "hide_solutions": false
 };
 
 fetch(url, {
@@ -1749,7 +1752,7 @@ content-type: application/json
                 <input type="text"
                name="theme"
                data-endpoint="POST_ignition-update-config"
-               value="auto"
+               value="dark"
                data-component="body" hidden>
     <br>
 <p>Must be one of <code>light</code>, <code>dark</code>, or <code>auto</code>.</p>
@@ -1759,7 +1762,7 @@ content-type: application/json
                 <input type="text"
                name="editor"
                data-endpoint="POST_ignition-update-config"
-               value="magni"
+               value="hic"
                data-component="body" hidden>
     <br>
 
@@ -1786,6 +1789,101 @@ content-type: application/json
 
         </p>
         </form>
+
+            <h2 id="endpoints-GETapi-user">GET api/user</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-user">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/user" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/user"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-user">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-user" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-user"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-user"></code></pre>
+</span>
+<span id="execution-error-GETapi-user" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-user"></code></pre>
+</span>
+<form id="form-GETapi-user" data-method="GET"
+      data-path="api/user"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-user', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-user"
+                    onclick="tryItOut('GETapi-user');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-user"
+                    onclick="cancelTryOut('GETapi-user');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-user" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/user</code></b>
+        </p>
+                    </form>
 
             <h2 id="endpoints-GEThome">GET home</h2>
 
@@ -1832,7 +1930,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IlZITnZQcE92alNYMXNjZ2RuM0lHcHc9PSIsInZhbHVlIjoiTytybUVDSWRDWnRKTExRcldUY1lGOE44a1ZSN1ZyYUhVa25uWE9RRGJDb0xSVDJuYnBvK1ZGaGhQN3FIZ2k5Qkt4U0FNOGVBNDdnbnNzcEFGTzlZSVI3UG0zV1k2N1c2ZVNDc1lGYnA3NEZHTHQ2Tjhpa0VkWnd0bnNQQk52MFQiLCJtYWMiOiI1ZDMyMWQzNmZjYmE0Yjg4NTY0ODBiNzZiN2ExNDczOGEyYWVlZDdiMGNiNTEzY2E5YzllMDQzNTIyZGE5ZjNiIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6IjBzVFcyVGdTeENCeTJrNHpsNE53M3c9PSIsInZhbHVlIjoiM294WGdTeHpFd3hyZnowVWxnT2laR2RzUENrKzh6QXB2Ty83RjJYRmd5NHJrWHhpTjI1SXZHMDI2R1hRVTg3a3h1c2lFeXJLVldvcTkwek9YdWNRbHB4ZWZQM0dVWkw5RTRrL0ROTnFZRWQ4SC95Ty9zMTVJUmZRYlliVVNhQ3IiLCJtYWMiOiI4MWRkYWIyYjdhN2ZhYjMyNTRmZTk1Mzk4OTNlZWVlZDU3Y2M0Njk2Yjg2YmEwNzhiYzNlZGFlMDExMzNlYjIyIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -1927,7 +2025,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IklPOVhpblRhS2xHaHZ5dkZFRVYrU0E9PSIsInZhbHVlIjoiWm5DNW41SHJQMTdzcVVNYWsvK1QxVEo5M0R5b0QwYy9VRFd4QmExZlFETWZsZUxXUXQwWGtqVVowUVhnZjFlQ2lZSndYRGlPNC8vZFhIelY1YzJiWXJaTm02V3Q3dHNMbmZDcVo0Y2JSWkNDakhUZktKOFdYMnRKN3VYSFk0QjQiLCJtYWMiOiI4OTgxYTYxMzRkMjkxNzI2NmY1MTMyYWYxZGY2N2ZhMmI2Y2YzZjJjOWZjZmQ0NjEwOTQ1NDgyOTBjZTcyNjM4IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6IlQrV05XWk9NVmkxSlZJSnJKM0tyVUE9PSIsInZhbHVlIjoiQ3ZTRkZSTHYweUU1TE1UNTVmYkFQODg0bXdkbzZ6SWI5ZWhVZlJDZkNHL1ptRWIycUNEOWlKcUdWRjN0ck0rMlJSdTJOZEdyOFlCRHlJd01jTWhpcEFSMUl2RU8yd3JJc254dXFTem5UdUpES1VMWG4zdWo1TzE5TFBtUy9aMmwiLCJtYWMiOiI2MjY4OTc4NTkxOWQ1YTY2Njg3YTdjMGZlMjk1MWJhZWZkZGVmZTkwNjc4NTNhMjI3M2E0Y2JkNTliZTQxMjVjIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3011,7 +3109,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IkdoUkN0SG1lV1ZxUmVKdEpLT21zQWc9PSIsInZhbHVlIjoiSG1KRHdtMkd0UC9jRGIvOXNiaG9qeUliaXlsTmcvVXBsYldCS0g1cWdjL0NnTXBFTWNtb01VTHlkRmFGTDY0NXhDaHZMdy95N1lmbzJVdzhuM0ZiaXZ0YThyTjE1a01FR0FqMlMyaWV0S0hTTHkvclRZL3hVQjdNc3hTNncvcW8iLCJtYWMiOiI4ZmFhYWNkNDJlOWNiYjZkNjBhMTJjNDJhOTE2YmI2ZjdmZWM2YzgxNGU3ZjBiNGMwMzY0NDU4ODI1NDYwOTgwIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Inc1bHREUDU1WFBnb3RwU1pQTGdDTGc9PSIsInZhbHVlIjoiL3hPSTQyNTNJRVFSSFBkclRHeFNpZEdNdC9GUnZuRm9QZDR5eFlCZ212L3FaMVF2dzhXM0dxMmpOMktlTVREK3ZtV01kcHB3QmRTeG1jaHlHOXROc0xrK3NxNUZJSlNaeUpnYkszS0FaSzBycTZYT0ViM2JTL3lBakxNeXNIYXgiLCJtYWMiOiIwYjI3YTM5ODI4ZmQ4OWViNWZmZmQzMDkxMmJlYzQzNTMyMWE2NTY0OGRlNDUyZjZmMzcxMjVlZGIxMmRkNDU1IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3089,8 +3187,8 @@ set-cookie: laravel_session=eyJpdiI6IkdoUkN0SG1lV1ZxUmVKdEpLT21zQWc9PSIsInZhbHVl
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"k\",
-    \"email\": \"\"
+    \"name\": \"tl\",
+    \"email\": \"ua\"
 }"
 </code></pre></div>
 
@@ -3106,8 +3204,8 @@ const headers = {
 };
 
 let body = {
-    "name": "k",
-    "email": ""
+    "name": "tl",
+    "email": "ua"
 };
 
 fetch(url, {
@@ -3128,7 +3226,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IlBTZGk0YXdQMi9Vcm5RRWtZcVVtbkE9PSIsInZhbHVlIjoiWXhMMzhva1pYZ01ta05WZDg5N2NKdWhvUDJSZFphdFdRTThuU2JqUlZTN0pPTGgxUFhaK2gwTzUrTjRKTXdaSWlyTUlPS2lickxQMk1MbVRSWkpYVHpWWTdDL0JXTTIwU1FtZ2Z5Z1BGdVFkSHhxUFBOOEFlQnZTZnNla1l5NCsiLCJtYWMiOiJiOGEyNTVlM2FjY2IzZTM2NGU2NGYxNmNlMzQxZWM1OGYyMDUyY2ZjMTMyOGE4MjhiZGQwYmIxMzBlOTI3YjY0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6ImFZNUJtZitPdUZJYnBYUUpPdXo4cWc9PSIsInZhbHVlIjoiem0vZ3VkbytoRTlGZGNURWNOSU1TTkx4d1hmUUwyNVRBajcwbUQ3eXl4KzNDR2l2c3NDL2M5OG8zYVhtSUdlNnl4VkVvdWhJOUhHOE1BNnBIM1hzLytBbEgva2ZqTjM4b0l6NzRIQmVua3lvdVlKamFqYWpQNHNJOWdIMy9Uc0wiLCJtYWMiOiJmNTMwMzJkNTZlOTA5OGM4YjUzNDQyMGRkZDEyM2I4Mzg2ZjY2ODUxZWJkZmMxYWU1MWIzODBkYWE0YzIzNWRmIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3197,7 +3295,7 @@ set-cookie: laravel_session=eyJpdiI6IlBTZGk0YXdQMi9Vcm5RRWtZcVVtbkE9PSIsInZhbHVl
                 <input type="text"
                name="name"
                data-endpoint="PUTuser--id-"
-               value="k"
+               value="tl"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 50 characters. Must be at least 2 characters.</p>
@@ -3207,7 +3305,7 @@ set-cookie: laravel_session=eyJpdiI6IlBTZGk0YXdQMi9Vcm5RRWtZcVVtbkE9PSIsInZhbHVl
                 <input type="text"
                name="email"
                data-endpoint="PUTuser--id-"
-               value=""
+               value="ua"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 50 characters. Must be at least 2 characters.</p>
@@ -3259,7 +3357,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IkhaVitCeHB4MU5GUDFteGlwT29uM3c9PSIsInZhbHVlIjoiaUI2S1hQbXBwVm05eG9HZ2o0TGpUQ3BwOTlGbE0wTVhKaXRIaldOMVZ0MGV3NzU4QzhmbHFFTkZCQk51eWowZlZFaUFXKzBrQzloQUlhQnF4cmNIQ2ZBUWhzOWdjKzIwNXpqeXhyRXRKVHNEZHVFVU1KZVdYK0xKMUk0ZHNid3MiLCJtYWMiOiIxYjYzZWJhM2IwMjhlZjIyMDE2OWIzYzNjOWYxMWU1NmYyMTg3NjI2NzNmNjkzODM0ODMzNWZmNmNjYjJjNzg1IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Ikh2dXNCYWI3RHJGa1BneU11S1lFc3c9PSIsInZhbHVlIjoiQjNrUDlWdTFWQ0tnblpRVkdqeFJ2WjNLUnJQQS9iSnlJRDdmRytETFo1MmlTdXZhclRoSUtMZTYzQWlybURYV2dHdmp1Y0syTWpnQ0g0OXVyZkU5REJvWDhtTGkzU0NaMzBZZit4STJrS29ZT2xmdmx4a3BXbVpQOW53bUIyU1EiLCJtYWMiOiI3OTYzYTNjOGI5ZmJlNDQwMDIyNjU4MjA4NGJkOTdlNDA4NGM2NjBlNmMyMjlmNTRkNDdlNTQ1YjFhNjI1MGYxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3333,14 +3431,14 @@ set-cookie: laravel_session=eyJpdiI6IkhaVitCeHB4MU5GUDFteGlwT29uM3c9PSIsInZhbHVl
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/user/9/shoppinglist" \
+    --get "http://localhost/user/19/shoppinglist" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/user/9/shoppinglist"
+    "http://localhost/user/19/shoppinglist"
 );
 
 const headers = {
@@ -3365,7 +3463,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6Ik1USHNKSHZOTjNITjQyYVlIZ011cHc9PSIsInZhbHVlIjoiTEtJYVdXUms1dUdUdkt6Z0w3bEw3bldRYmZ6SEJSaVFIL0VIVm8vd1dKYmRSTEhsMWlReElSRCsvVEQrZ0tTZGFTejAyWUl4YTMwalRjUmFUY3A2VzN2TU9WemRXbFRrRnRJTzB5Rmhtc2hBajl1NDBNaUlJaExZNXBMcFF0aG4iLCJtYWMiOiJlMjRhZGY3OTMxMjE4MTM3NTc5OWM1YmU5YjVhNTVmNDZkYjQzOTg1MjBmNzU4NTAwZmY3OWY4ZmE4OTRhZmFiIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6InJrOXBKcjBuQW1jSXpWanlwTmdIY3c9PSIsInZhbHVlIjoiUnpEb3pHWUVTcTVEOFlsQXI2MWdXaDBoT2FIV0JXSTd1NEc5RlBIRG5yVnZ5K1JUNTQ1TDlUMlBnRVJPQ0I3akFyM3h1NjMwMFFDbjNPazRjSFcxZ1NZTWw2WndJTnJWQ2I2by9FWFF6TVRmVm4zRUpDbzBFY21DRmpMTHFLSFgiLCJtYWMiOiIzZjU0YzcwNjljM2RkOTMxNTU1NmU1MzcxZTI1YjYyZDBlZThjYzg2MTI5ZGUwMjg2NjQxNzViNzA5ZWYxNGJlIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3419,7 +3517,7 @@ set-cookie: laravel_session=eyJpdiI6Ik1USHNKSHZOTjNITjQyYVlIZ011cHc9PSIsInZhbHVl
                 <input type="number"
                name="user"
                data-endpoint="GETuser--user--shoppinglist"
-               value="9"
+               value="19"
                data-component="url" hidden>
     <br>
 
@@ -3443,7 +3541,7 @@ set-cookie: laravel_session=eyJpdiI6Ik1USHNKSHZOTjNITjQyYVlIZ011cHc9PSIsInZhbHVl
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ygqjfaqrqrowlnaehpzuchnjsdojlvlztderecqsmwclzplbpdawkmvrdoexbxocslysxgjaefdkjfxnkjwwyhykmizqcbmwmlgxljyjhglwtfwoqrwmrytdcwnotfossyexcffmdxdibmwydqrmvfxdmden\"
+    \"name\": \"pryiprbbcdcsrn\"
 }"
 </code></pre></div>
 
@@ -3459,7 +3557,7 @@ const headers = {
 };
 
 let body = {
-    "name": "ygqjfaqrqrowlnaehpzuchnjsdojlvlztderecqsmwclzplbpdawkmvrdoexbxocslysxgjaefdkjfxnkjwwyhykmizqcbmwmlgxljyjhglwtfwoqrwmrytdcwnotfossyexcffmdxdibmwydqrmvfxdmden"
+    "name": "pryiprbbcdcsrn"
 };
 
 fetch(url, {
@@ -3480,7 +3578,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6IjRFZUZNRE5YeERmRlR0ZjFNUDZTR0E9PSIsInZhbHVlIjoicVVJTEY5NXI4VktkMHlXTGFCRU9qSno0azUrK2pKK2paVFNhR0V6ak5xTWRWSmhoeXZ3UG5BVzNlblFJV0JMN2hsa1MzRjlQazRLSEhJT2YxOWxPZ3VqNTYwSGJwbFFtSXRJME5kQ1owNG94eFl2SVRJL3dvcTVSeXJZaWJmdlciLCJtYWMiOiIwZjI3YjJlNWRiZDVlN2VhMTA4NTkyYWM4NzIxNzFmMDc1NTljMWI3ODNhNTM4MThkODE2ZmUzZGY2Y2RhODI0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Im54N1ppSHQ2Wm1CSVZQMGpDTEJ1aGc9PSIsInZhbHVlIjoiam9ZSTRaR1I5c0U0a0pLYkNvUm8yVHpEeEx1UHpEUERSc3lNZ0JnU2oxbUdJblZTYTFhV1dRUnYxQmlMRlg4UUJMQWlUQWVxb0NMOWNCcmdMQkpZMGVFV0JSNjc1WnFvMnY2QWF6Z2lGQ3pXcnhySzBvU2wrUGIxZ0wwajlXTmgiLCJtYWMiOiI5ZGNkNTFmN2NlZDE0MTVjZGI4MzFiZmZlNjRkNGZiMzdiN2Q4Y2FkZDQwN2QwZDA5NjExMjZhZDFkZmI1NGM4IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3545,7 +3643,7 @@ set-cookie: laravel_session=eyJpdiI6IjRFZUZNRE5YeERmRlR0ZjFNUDZTR0E9PSIsInZhbHVl
                 <input type="text"
                name="name"
                data-endpoint="POSTuser--user--shoppinglist"
-               value="ygqjfaqrqrowlnaehpzuchnjsdojlvlztderecqsmwclzplbpdawkmvrdoexbxocslysxgjaefdkjfxnkjwwyhykmizqcbmwmlgxljyjhglwtfwoqrwmrytdcwnotfossyexcffmdxdibmwydqrmvfxdmden"
+               value="pryiprbbcdcsrn"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -3597,7 +3695,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6ImE5UmNXang4dkNpSVVYNFp3OGprclE9PSIsInZhbHVlIjoiWUtPb2pJQnY2dG9TOGE4OU5WelNqYk5VaTVlNFNCVS8vTWNsQUNRV2xPbTFNb2ZKNWU1dmJJZUx1WnVFWXJWQ3hIMGVPQURTbXRrcjFoa0VIdHFpT09IK1BRQ29GQktoRWlGVjVtdTcxSTBtbXpjZE1RbkVSckc2NktaQmVNUlkiLCJtYWMiOiI5YzFjMzdlY2JhYzBlOGY5OGRlOTQ5NTRhMmZkYmE4ZWRjNzE2YmNiMWIzYzk4NzQzOTZkYWQxOWMwZDJiOGQ0IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Inlpc2w5UGRJc3JodXFHbis0TGVna0E9PSIsInZhbHVlIjoiSndTSlFlNDJNZ2Q0Umw2NDQ4RnRKNG5IV284QXNWZXlaZ0pUamRXWHM5NkEyVWIwYWQxcXgvRTYyUmRGVWhVMGN3RnREM2VjNmZxOFNNSUdyR0pJSjVxaVlvbE9rWXRkVTYrdzZUbDh3Um90Q1pKY29IQXFsTGYyaVZlRHBIS24iLCJtYWMiOiJiMTNlOTI1MTc4MmE1MzhjNWJkMTViYTMzYTQ3NjM3YTEzZjI5MzZlN2NkMDRhMzhmYjZlNGM5MDQ2ZTYxNDdkIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3713,7 +3811,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6InNaMk9VbFRiY09mYWdNZXlqNnBBcmc9PSIsInZhbHVlIjoiOHVEd2h0MzBvcnl6SE10VGZkRFpObitHbnA3RlA2MEQyc3lpQ2RCV0NmU3FwRTRSUUEwRzBoT1phendPQUtFL2VXNlJBQzRLVS91MUV1NW56cjNLcmJSb0VHdnpIUUhkNjhIY2lkZzgzaW9tNlFYS0Y3T0R1ZkhwUVNmRzNacG4iLCJtYWMiOiI1NmJjNjllMTExZmRiNjFmZDY3ODJjYWQ3ZmFiZjUxNGJhMDYwMjE0YWZlZGY0MDk5ZTlhNjU5ZjcyOTQyODIxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6IklOTllXd3FtSW1XU2hRUUNpdDJXK2c9PSIsInZhbHVlIjoiTmpoeHRpd28rbGNuMHVpY1lUcWs0TjR1SXN1d1JuYlNTVGUxaklaOFBhaksvTThNSTZlNjNOMmRLNUQ2YkVKbDVOK2hqSWtmMi91cWF4dTRkVHFsQ0ZsVmZ2Y2xGdktHVzc4N01BQVpqSDF5dng0bXlFbUZTMWxkQW5RWHpVc0siLCJtYWMiOiIyNGUxOWU4YTViOWNhMWUyNmQxOTBmYTU4MmJkMmEwZDQwZGJmMGI4MGZiOTc1MTYxYTlmMGFhZTQ1ZWI1NmYxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3797,18 +3895,18 @@ set-cookie: laravel_session=eyJpdiI6InNaMk9VbFRiY09mYWdNZXlqNnBBcmc9PSIsInZhbHVl
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/user/1/shoppinglist/5/items/8" \
+    "http://localhost/user/1/shoppinglist/5/items/20" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"amount\": 65
+    \"amount\": 132
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/user/1/shoppinglist/5/items/8"
+    "http://localhost/user/1/shoppinglist/5/items/20"
 );
 
 const headers = {
@@ -3817,7 +3915,7 @@ const headers = {
 };
 
 let body = {
-    "amount": 65
+    "amount": 132
 };
 
 fetch(url, {
@@ -3838,7 +3936,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6InlvL1E3Q3lKTFdQYnBaNXFDRXlyNEE9PSIsInZhbHVlIjoiSFpsRlo5MnltbzNzeXVFbWxQTzdoc0R2RnBZVmVKWG16Vm1UaG1uYVFOdjVKL3FJR0w4YjN0YXRDRVJDbDFaM2M5YXliVEZOUFlQWjV2NER3SW94dVZKVmlaOFJ0Zlo3UDZ1MGdXejgrcDJnbWMvamlwMVBTNjlXU2FFblJoWnQiLCJtYWMiOiI0OWY4NDg3Y2NiMzc2NjI5MTU5ZDA3ZDYyMTk2Y2ZhODk4NTFmY2ZhZDRmZTAyNzk3NmFlNTQ0NDRlZWM3N2MxIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6Im54Yjhxc0VIRVBGM2FSeDAxekdubXc9PSIsInZhbHVlIjoiWmQ2cnhiYmtodUhqZmNrTHRUUmlpNjVHeVFNbE5BSERSeXM4WlVTcitrYjBya0VpZGQrWmVmQXA1N3JIUHV1eDJia3RUd2VUWGk5RDlEVzhONWxUdjBlbkM2QmRTUHdMeEU1MW42MUtJNUNCVlU1ZlpSMFJXNFRnMG94bm9tN28iLCJtYWMiOiI2YzdkYjE5ZGQyZmIxYjlmZGJiOTczZjAwZjZlMTEwZmM1YTAxMjA4OTA1N2IxYWI2OWUyN2ZlZjFiZTRhMmNkIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
@@ -3916,7 +4014,7 @@ set-cookie: laravel_session=eyJpdiI6InlvL1E3Q3lKTFdQYnBaNXFDRXlyNEE9PSIsInZhbHVl
                 <input type="number"
                name="item"
                data-endpoint="PUTuser--user--shoppinglist--shoppinglist--items--item-"
-               value="8"
+               value="20"
                data-component="url" hidden>
     <br>
 
@@ -3927,7 +4025,7 @@ set-cookie: laravel_session=eyJpdiI6InlvL1E3Q3lKTFdQYnBaNXFDRXlyNEE9PSIsInZhbHVl
                 <input type="number"
                name="amount"
                data-endpoint="PUTuser--user--shoppinglist--shoppinglist--items--item-"
-               value="65"
+               value="132"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255.</p>
@@ -3979,7 +4077,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-set-cookie: laravel_session=eyJpdiI6Ii8xTGZnazh0c0c1N21DWGNQejRIaHc9PSIsInZhbHVlIjoieW1RYWo0aWpDQkNrUlU4elRoWlZGY0F4Q3EzVHBSTjBEUTNlSDRyK3Q3VEltdnhQS2JzNXVKOGtic05wVkw3T1kreVRrdXZ6b05kWWZHMjNXZEJ5SWdmdmNJeStNMGM0ZmNpUTdLd2IxRkRFQmJhSHRyU2h6UEhGNjJpSDBIZGoiLCJtYWMiOiJlNDcyZjU0NTAwMTVlZmUyOWJiMWVmYjdkMTIyM2Y2NWFkN2U4M2I0NGI5ZTUyZWI3ZDBmMWVjNjU2ZjBkM2U3IiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:09:13 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=eyJpdiI6IkpNRFpFekN4QjczanU2RTQxQ3gxR3c9PSIsInZhbHVlIjoiS3ZMNHZZUmtsM2ppV0t1alROUnFnZUpYSEx2OU5LeTc2YytoKzZxc3pReW9INVN2YVkxNVg4Vld3Z2ROblM4SjMrTWhZTmZ2U1MzcXlMc1dBaUphVmh2dFh6VnAzSmRqQ2hHNk93TGFkM1dIMkYyNnc2NU5wVmVKN2VkTXBTOFIiLCJtYWMiOiIyNDIxOGQyYWE0M2M0ZTIyY2FlN2M2ODU3YTEwNDIxMjlkODA1YWJhNzYzMzg5N2YwY2VkZGIxMGNiNDk4YWMwIiwidGFnIjoiIn0%3D; expires=Tue, 14 Jun 2022 21:07:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre>
         </details>         <pre>
 
