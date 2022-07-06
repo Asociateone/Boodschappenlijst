@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UserUpdateRequest;
 use App\Models\User;
+use App\Http\Requests\UserUpdateRequest;
 
 class UserController extends Controller
 {
